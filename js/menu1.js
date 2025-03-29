@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     let cartCount = document.getElementById("cart-count");
     let buttons = document.querySelectorAll(".menu-item button");
+    
 
     let count = 0;
 
@@ -38,4 +39,5 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 1000);
         });
     });
-});
+   
+    });
