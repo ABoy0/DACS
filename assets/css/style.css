@@ -5,6 +5,31 @@
     font-family: Arial, sans-serif;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các mục */
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+}
+
+.right-menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
 body {
     background-color: #f8f8f8;
 }
@@ -31,6 +56,7 @@ header {
     cursor: pointer;
     font-size: 16px;
     transition: background 0.3s ease;
+    margin-top: 10px;
 }
 
 .btn-primary:hover {
@@ -344,6 +370,16 @@ button.prev:hover, button.next:hover {
     padding: 10px;
     text-align: center;
 }
+.menu-items {
+    scrollbar-width: none; /* Ẩn scrollbar trên Firefox */
+    -ms-overflow-style: none; /* Ẩn scrollbar trên IE/Edge */
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.menu-items::-webkit-scrollbar {
+    display: none; /* Ẩn scrollbar trên Chrome, Safari */
+}
 
 .prev, .next {
     position: absolute;
@@ -354,6 +390,21 @@ button.prev:hover, button.next:hover {
     border: none;
     padding: 10px;
     cursor: pointer;
+}
+.menu-item button {
+    background-color: #007bff; /* Xanh biển */
+    color: white; /* Chữ trắng */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-item button:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
 }
 
 .prev { left: 0; }

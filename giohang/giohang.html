@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giỏ hàng</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const quantities = document.querySelectorAll(".quantity");
+            const itemTotals = document.querySelectorAll(".item-total");
+            const subtotalEl = document.getElementById("subtotal");
+            const totalEl = document.getElementById("total");
+    
+            function updateTotal() {
+                let subtotal = 0;
+                quantities.forEach((input, index) => {
+                    const pricePerUnit = parseFloat(itemTotals[index].dataset.price);
+                    const quantity = parseFloat(input.value);
+                    const totalPrice = pricePerUnit * quantity;
+                    itemTotals[index].textContent = `$${totalPrice.toFixed(2)}`;
+                    subtotal += totalPrice;
+                });
+    
+                // Cập nhật tổng tiền
+                subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+                const shipping = 3.99;
+                const tax = 2.00;
+                totalEl.textContent = `$${(subtotal + shipping + tax).toFixed(2)}`;
+            }
+    
+            quantities.forEach(input => {
+                input.addEventListener("input", updateTotal);
+            });
+    
+            updateTotal();
+        });
+    </script>
     
 <body>
     <div class="cart-container">

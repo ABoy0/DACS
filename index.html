@@ -6,6 +6,11 @@
     <title>TeamFOOD</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<script>
+    window.onload = function () {
+        window.scrollTo(0, 0);
+    };
+</script>
 <body>
 
     <header>
@@ -20,8 +25,9 @@
                         <ul class="dropdown-menu" id="dropdown-menu">
                             <li><a href="#">LẨU</a></li>
                             <li><a href="#">GÀ RÁN</a></li>
-                            <li><a href="#">Pizza</a></li>
-                            <li><a href="#">Món khác</a></li>
+                            <li><a href="#">PIZZA</a></li>
+                            <li><a href="#">TRÁNG MIỆNG</a></li>
+                            <li><a href="#">THỨC UỐNG</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -91,27 +97,36 @@
             </div>
         </div>
     </section>
-    <div class="menu-container">
 
         <!-- Danh mục món ăn -->
-        <h2>Danh mục món ăn</h2>
+        <h2>DANH MỤC MÓN ĂN</h2>
 <div class="menu-wrapper">
     <button class="prev">&#10094;</button>
     <div class="menu-items">
         <div class="menu-item">
             <img src="assets/images/menu1.jpg" alt="GÀ RÁN">
-            <h3>Gà rán</h3>
+            <h3>GÀ RÁN</h3>
             <button class="view-more" data-target="GÀ RÁN">XEM THÊM</button>
         </div>
         <div class="menu-item">
             <img src="assets/images/menu_lau3.webp" alt="LẨU">
-            <h3>Lẩu</h3>
+            <h3>LẨU</h3>
             <button class="view-more" data-target="LẨU">XEM THÊM</button>
         </div>
         <div class="menu-item">
             <img src="assets/images/TRANG MIENG.jpg" alt="TRÁNG MIỆNG">
-            <h3>Tráng miệng</h3>
+            <h3>TRÁNG MIỆNG</h3>
             <button class="view-more" data-target="TRÁNG MIỆNG">XEM THÊM</button>
+        </div>
+        <div class="menu-item">
+            <img src="assets/images/Meat-lover-Pizza-5-Loai-Thit-Thuong-Hang.jpg" alt="PIZZA">
+            <h3>PIZZA</h3>
+            <button class="view-more" data-target="PIZZA">XEM THÊM</button>
+        </div>
+        <div class="menu-item">
+            <img src="assets/images/coke-zero.jpg" alt="THỨC UỐNG">
+            <h3>THỨC UỐNG</h3>
+            <button class="view-more" data-target="THỨC UỐNG">XEM THÊM</button>
         </div>
     </div>
     <button class="next">&#10095;</button>
@@ -141,21 +156,21 @@
                     <button>MUA</button>
                 </div>
                 <div class="menu-item">
-                    <img src="assets/images/menu_ga4.jpg" alt="Combo Gà 4">
-                    <h3>COMBO GÀ 4</h3>
-                    <p>Giá bán: <span class="price">100.000đ</span></p>
+                    <img src="assets/images/360x240+Gà+Viên+Phô+Mai+Đút+Lò@2x.png" alt="GÀ VIÊN PHÔ MAI">
+                    <h3>GÀ VIÊN PHÔ MAI</h3>
+                    <p>Giá bán: <span class="price">125.000đ</span></p>
                     <button>MUA</button>
                 </div>
                 <div class="menu-item">
-                    <img src="assets/images/menu_ga5.jpg" alt="Combo Gà 5">
-                    <h3>COMBO GÀ 5</h3>
-                    <p>Giá bán: <span class="price">105.000đ</span></p>
+                    <img src="assets/images/360x240+Gà+Viên+Xốt+Chua+Ngọt+Đút+Lò@2x.png" alt="GÀ VIÊN CHUA NGỌT HÀN QUỐC">
+                    <h3>GÀ VIÊN CHUA NGỌT HÀN QUỐC</h3>
+                    <p>Giá bán: <span class="price">135.000đ</span></p>
                     <button>MUA</button>
                 </div>
                 <div class="menu-item">
-                    <img src="assets/images/menu_ga6.jpg" alt="Combo Gà 6">
-                    <h3>COMBO GÀ 6</h3>
-                    <p>Giá bán: <span class="price">110.000đ</span></p>
+                    <img src="assets/images/360x240Cánh+Gà+Phủ+Xốt+BBQ+Kiểu+Mỹ@2x.png" alt="CÁNH GÀ BBQ MỸ">
+                    <h3>CÁNH GÀ BBQ MỸ</h3>
+                    <p>Giá bán: <span class="price">155.000đ</span></p>
                     <button>MUA</button>
                 </div>
             </div>
@@ -186,35 +201,165 @@
                     <p>Giá bán: <span class="price">299.000đ</span></p>
                     <button>MUA</button>
                 </div>
+                <div class="menu-item">
+                    <img src="assets/images/60017527_laude_1.jpg" alt="Lẩu dê">
+                    <h3>Lẩu dê</h3>
+                    <p>Giá bán: <span class="price">299.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/60000114_lau_bulgogi_1.jpg" alt="Lẩu bul">
+                    <h3>Lẩu bul</h3>
+                    <p>Giá bán: <span class="price">299.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/tuxuyen.webp" alt="Lẩu tứ xuyên">
+                    <h3>Lẩu tứ xuyên</h3>
+                    <p>Giá bán: <span class="price">299.000đ</span></p>
+                    <button>MUA</button>
+                </div>
             </div>
             <button class="next">&#10095;</button>
         </div>
-        <h2>Nước</h2>
+
+        <h2>PIZZA</h2>
+        <div class="menu-wrapper">
+            <button class="prev">&#10094;</button>
+            <div class="menu-items">
+                <!-- 6 sản phẩm để trượt -->
+                <div class="menu-item">
+                    <img src="assets/images/pizzabomy.jpg" alt="Pizza bò mỹ">
+                    <h3>Pizza bò mỹ</h3>
+                    <p>Giá bán: <span class="price">195.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/pizzadambong.jpg" alt="Pizza dăm bông">
+                    <h3>Pizza dăm bông</h3>
+                    <p>Giá bán: <span class="price">155.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/pizzagaphomai.jpg" alt="Pizza gà phô mai">
+                    <h3>Pizza gà phô mai</h3>
+                    <p>Giá bán: <span class="price">175.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/pizzathanhcua.jpg" alt="Pizza thanh cua">
+                    <h3>Pizza thanh cua</h3>
+                    <p>Giá bán: <span class="price">165.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/pizzaxxpm.jpg" alt="Pizza xúc xích phô mai">
+                    <h3>Pizza xúc xích phô mai</h3>
+                    <p>Giá bán: <span class="price">170.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/Meat-lover-Pizza-5-Loai-Thit-Thuong-Hang.jpg" alt="Pizza combo 5 thịt">
+                    <h3>Pizza combo 5 thịt</h3>
+                    <p>Giá bán: <span class="price">205.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+            </div>
+            
+            <button class="next">&#10095;</button>
+        </div>
+
+        <h2>TRÁNG MIỆNG</h2>
+        <div class="menu-wrapper">
+            <button class="prev">&#10094;</button>
+            <div class="menu-items">
+                <!-- 6 sản phẩm để trượt -->
+                <div class="menu-item">
+                    <img src="assets/images/banhxoai.jpg" alt="Bánh xoài">
+                    <h3>Bánh xoài</h3>
+                    <p>Giá bán: <span class="price">45.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/banhsocoladotlo.jpg" alt="Bánh socola đốt lò">
+                    <h3>Bánh socola đốt lò</h3>
+                    <p>Giá bán: <span class="price">55.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/banhphomai.jpg" alt="Bánh phô mai">
+                    <h3>Bánh phô mai</h3>
+                    <p>Giá bán: <span class="price">45.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/banhcuonsocola.jpg" alt="Bánh cuộn socola">
+                    <h3>Bánh cuộn socola</h3>
+                    <p>Giá bán: <span class="price">45.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/mon-trang-mieng-Phap-05.jpg" alt="Bánh Gateau">
+                    <h3>Bánh Gateau</h3>
+                    <p>Giá bán: <span class="price">50.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/Mille-feuille.jpg" alt="Bánh Mille-feuille">
+                    <h3>Bánh Mille-feuille</h3>
+                    <p>Giá bán: <span class="price">55.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+            </div>
+            
+            <button class="next">&#10095;</button>
+        </div>
+
+        <h2>THỨC UỐNG</h2>
         <div class="menu-wrapper">
             <button class="prev">&#10094;</button>
             <div class="menu-items">
                 <div class="menu-item">
-                    <img src="assets/images/tải xuống.jpg" alt="Pepsi">
-                    <h3>Pepsi</h3>
-                    <p>Giá bán: <span class="price">15.000đ</span></p>
+                    <img src="assets/images/dao-hat-chia.jpg" alt="Trà đào hạt chia">
+                    <h3>Trà đào hạt chia</h3>
+                    <p>Giá bán: <span class="price">25.000đ</span></p>
                     <button>MUA</button>
                 </div>
                 <div class="menu-item">
-                    <img src="assets/images/nuoc_ngot_cocacola_vi_nguyen_ban_320_ml_5545f89b5d434c548a8bff6118a3ed49.webp" alt="Coca">
-                    <h3>Coca</h3>
-                    <p>Giá bán: <span class="price">15.000đ</span></p>
+                    <img src="assets/images/coke-zero.jpg" alt="Coca Zero">
+                    <h3>Coca Zero</h3>
+                    <p>Giá bán: <span class="price">25.000đ</span></p>
                     <button>MUA</button>
                 </div>
                 <div class="menu-item">
-                    <img src="assets/images/tải xuống (1).jpg" alt="Sprite">
+                    <img src="assets/images/Sprite-390.jpg" alt="Sprite">
                     <h3>Sprite</h3>
+                    <p>Giá bán: <span class="price">25.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/coke-390.jpg" alt="Coca">
+                    <h3>Coca</h3>
+                    <p>Giá bán: <span class="price">25.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/fanta-1.5.jpg" alt="Fanta">
+                    <h3>Fanta</h3>
+                    <p>Giá bán: <span class="price">25.000đ</span></p>
+                    <button>MUA</button>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/daisani.jpg" alt="Daisani">
+                    <h3>Daisani</h3>
                     <p>Giá bán: <span class="price">15.000đ</span></p>
                     <button>MUA</button>
                 </div>
             </div>
             <button class="next">&#10095;</button>
         </div>
-    </div>
+        
+        
     
     <!-- giohang -->
     <div id="cart">
@@ -226,6 +371,29 @@
     <script src="js/sideShow.js"></script>
     <script src="js/menu1.js"></script>
     
-
+    <footer style="background-color: #7f0808; color: #222; text-align: center; padding: 20px 0; font-size: 14px;">
+        <div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 250px; text-align: left; padding: 10px; display: flex; align-items: center;">
+                <img src="assets/images/logo.jpg" alt="TeamFOOD" style="height: 50px; margin-right: 10px;">
+                <div>
+                    <h3>TeamFOOD</h3>
+                    <p>&copy; 2025 TeamFOOD. All Rights Reserved.</p>
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 250px; padding: 10px;">
+                <h3>Liên Hệ</h3>
+                <p>Email: support@teamfood.com</p>
+                <p>Hotline: 1900 1234</p>
+            </div>
+            <div style="flex: 1; min-width: 250px; text-align: right; padding: 10px;">
+                <h3>Kết Nối</h3>
+                <a href="#" style="color: #222; margin-right: 10px;">Facebook</a>
+                <a href="#" style="color: #222; margin-right: 10px;">Instagram</a>
+                <a href="#" style="color: #222;">Twitter</a>
+            </div>
+        </div>
+    </footer>
+    
 </body>
+
 </html>
