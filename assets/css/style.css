@@ -4,18 +4,48 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+/* Giữ navbar dính trên đầu trang */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Đưa logo, menu, và phần bên phải về hai bên */
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 
+/* Định dạng logo */
+.logo img {
+    height: 70px; /* Điều chỉnh kích thước logo */
+}
+
+/* Chứa menu chính */
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Định dạng menu */
 nav ul {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px; /* Khoảng cách giữa các mục */
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 nav ul li {
     list-style: none;
 }
 
+/* Định dạng menu items */
 nav ul li a {
     text-decoration: none;
     padding: 10px 15px;
@@ -23,12 +53,20 @@ nav ul li a {
     font-weight: bold;
 }
 
+
+
+/* Định dạng menu bên phải */
 .right-menu {
     display: flex;
-    gap: 15px;
     align-items: center;
+    gap: 15px;
 }
 
+.right-menu a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
 
 body {
     background-color: #f8f8f8;
@@ -63,9 +101,7 @@ header {
     background-color: #0056b3;
 }
 
-.logo img {
-    height: 80px;
-}
+
 
 nav ul {
     list-style: none;
@@ -340,7 +376,7 @@ button.prev:hover, button.next:hover {
     background: darkred;
 }
 
-/* gio hang */
+
 #cart {
     position: fixed;
     bottom: 20px;
@@ -392,7 +428,7 @@ button.prev:hover, button.next:hover {
     cursor: pointer;
 }
 .menu-item button {
-    background-color: #007bff; /* Xanh biển */
+    background-color:#ff4d4d; /* Xanh biển */
     color: white; /* Chữ trắng */
     border: none;
     padding: 10px 15px;
@@ -409,3 +445,185 @@ button.prev:hover, button.next:hover {
 
 .prev { left: 0; }
 .next { right: 0; }
+  /* CSS cho modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+select, button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+.modal-content img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.menu-item img{
+    cursor: pointer;
+}
+/* giohang */
+.giohang{
+    text-decoration: none;
+}
+#cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#cart-count{
+
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu, 
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 8px 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background: lightgray;
+}
+
+/* Ẩn menu mặc định */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Hiển thị menu khi active */
+.dropdown:hover .dropdown-menu,
+#store-menu.active {
+    display: block;
+}
+
+/* Căn chỉnh dropdown ngay dưới nút */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/* Căn chỉnh chiều rộng menu */
+.dropdown-menu {
+    min-width: 200px;/* Ẩn menu mặc định */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Hiển thị menu khi active */
+.dropdown:hover .dropdown-menu,
+#store-menu.active {
+    display: block;
+}
+
+/* Căn chỉnh dropdown ngay dưới nút */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/* Căn chỉnh chiều rộng menu */
+.dropdown-menu {
+    min-width: 200px;
+    left: 0;
+    top: 100%;
+}
+
+    left: 0;
+    top: 100%;
+}

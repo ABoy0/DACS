@@ -13,7 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
             dropdownMenu.classList.remove("show");
         }
     });
-
+    document.querySelectorAll(".dropdown-menu li a").forEach(link => {
+        link.addEventListener("click", function () {
+            dropdownMenu.classList.remove("show");
+        });
+    });
     // Xử lý cuộn đến danh mục khi nhấn vào mục menu
     // Xử lý cuộn đến danh mục khi nhấn vào mục menu
 document.querySelectorAll(".dropdown-menu li a").forEach(link => {

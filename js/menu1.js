@@ -106,5 +106,13 @@ document.getElementById("open-cart").addEventListener("click", function() {
     window.location.href = "giohang.html";
 });
 
+function openMap(index) {
+    console.log("Đã click vào cửa hàng:", index);
+    window.location.href = `../hethongcuahang/bando.html?store=${index}`;
+}
+
+
+
+
 
     });

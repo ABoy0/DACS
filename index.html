@@ -13,11 +13,14 @@
 </script>
 <body>
 
-    <header>
-        <div class="logo">
+    
+        <!-- <div class="logo">
             <img src="assets/images/logo.jpg" alt="TeamFOOD">
-        </div>
+        </div> -->
         <nav>
+            <div class="logo">
+                <img src="assets/images/logo.jpg" alt="TeamFOOD">
+            </div>
             <ul>
                 <ul class="nav">
                     <li class="dropdown">
@@ -31,18 +34,24 @@
                         </ul>
                     </li>
                 </ul>
-                
-                
                 <li><a href="giohang/giohang.html">Giỏ hàng</a></li>
                 <li><a href="#">Trạng thái</a></li>
+                <li class="dropdown">
+                    <a href="#" id="store-toggle">HỆ THỐNG CỬA HÀNG ▼</a>
+                    <ul class="dropdown-menu" id="store-menu">
+                        <li><a href="#" onclick="openMap(0)">Cửa hàng 1 (Quận 1)</a></li>
+                        <li><a href="#" onclick="openMap(1)">Cửa hàng 2 (Quận 3)</a></li>
+                        <li><a href="#" onclick="openMap(2)">Cửa hàng 3 (Quận 5)</a></li>
+                    </ul>
+                </li>
+                              
             </ul>
+            <div class="right-menu">
+                <a href="#">Hỗ trợ</a>
+                <a href="#">Đăng nhập</a>
+            </div>  
         </nav>
-        <div class="right-menu">
-            <a href="#">Hỗ trợ</a>
-            <a href="#">Đăng nhập</a>
-        </div>
-    </header>
-
+    
     <section class="banner">
         <p>TeamFOOD – Đặt món dễ dàng, tận hưởng trọn vẹn!</p>
         <button class="btn-primary">Đặt món ngay</button>
@@ -182,43 +191,43 @@
         <h2>LẨU</h2>
         <div class="menu-wrapper">
             <button class="prev">&#10094;</button>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img src="assets/images/menu_lau1.jpg" alt="Lẩu Quân Đội">
-                    <h3>LẨU QUÂN ĐỘI</h3>
-                    <p>Giá bán: <span class="price">375.000đ</span></p>
-                    <button>MUA</button>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/images/menu_lau2.jpg" alt="Lẩu Bò Nấm">
-                    <h3>LẨU BÒ NẤM</h3>
-                    <p>Giá bán: <span class="price">309.000đ</span></p>
-                    <button>MUA</button>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/images/menu_lau3.webp" alt="Lẩu Kim Chi">
-                    <h3>LẨU KIM CHI</h3>
-                    <p>Giá bán: <span class="price">299.000đ</span></p>
-                    <button>MUA</button>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/images/60017527_laude_1.jpg" alt="Lẩu dê">
-                    <h3>Lẩu dê</h3>
-                    <p>Giá bán: <span class="price">299.000đ</span></p>
-                    <button>MUA</button>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/images/60000114_lau_bulgogi_1.jpg" alt="Lẩu bul">
-                    <h3>Lẩu bul</h3>
-                    <p>Giá bán: <span class="price">299.000đ</span></p>
-                    <button>MUA</button>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/images/tuxuyen.webp" alt="Lẩu tứ xuyên">
-                    <h3>Lẩu tứ xuyên</h3>
-                    <p>Giá bán: <span class="price">299.000đ</span></p>
-                    <button>MUA</button>
-                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="assets/images/menu_lau1.jpg" alt="Lẩu Quân Đội">
+                        <h3>LẨU QUÂN ĐỘI</h3>
+                        <p>Giá bán: <span class="price">375.000đ</span></p>
+                        <button>MUA</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="assets/images/menu_lau2.jpg" alt="Lẩu Bò Nấm">
+                        <h3>LẨU BÒ NẤM</h3>
+                        <p>Giá bán: <span class="price">309.000đ</span></p>
+                        <button>MUA</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="assets/images/menu_lau3.webp" alt="Lẩu Kim Chi">
+                        <h3>LẨU KIM CHI</h3>
+                        <p>Giá bán: <span class="price">299.000đ</span></p>
+                        <button>MUA</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="assets/images/60017527_laude_1.jpg" alt="Lẩu dê">
+                        <h3>Lẩu dê</h3>
+                        <p>Giá bán: <span class="price">299.000đ</span></p>
+                        <button>MUA</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="assets/images/60000114_lau_bulgogi_1.jpg" alt="Lẩu bul">
+                        <h3>Lẩu bul</h3>
+                        <p>Giá bán: <span class="price">299.000đ</span></p>
+                        <button>MUA</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="assets/images/tuxuyen.webp" alt="Lẩu tứ xuyên">
+                        <h3>Lẩu tứ xuyên</h3>
+                        <p>Giá bán: <span class="price">299.000đ</span></p>
+                        <button>MUA</button>
+                    </div>
             </div>
             <button class="next">&#10095;</button>
         </div>
@@ -362,15 +371,11 @@
         
     
     <!-- giohang -->
-    <div id="cart">
-        🛒 <span id="cart-count">0</span>
+     <a href="giohang/giohang.html" class ="giohang">
+         <div id="cart">
+             🛒 <span id="cart-count">0</span>
+            </a>
     </div>
-
-    
-    <script src="js/menu.js"></script>
-    <script src="js/sideShow.js"></script>
-    <script src="js/menu1.js"></script>
-    
     <footer style="background-color: #7f0808; color: #222; text-align: center; padding: 20px 0; font-size: 14px;">
         <div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
             <div style="flex: 1; min-width: 250px; text-align: left; padding: 10px; display: flex; align-items: center;">
@@ -393,7 +398,37 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
+    <div id="foodModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Hình ảnh sản phẩm">
+            <h3 id="modalTitle"></h3>
+            <p id="modalPrice" data-price-small="95000" data-price-medium="120000" data-price-large="145000">95.000đ</p>
+            <label for="size">Chọn kích cỡ:</label>
+            <select id="size">
+                <option value="small">Nhỏ</option>
+                <option value="medium">Vừa</option>
+                <option value="large">Lớn</option>
+            </select>
+            <button id="buyButton">MUA</button>
+        </div>
+    </div>
     
-</body>
-
+  
+   
+    
+    
+    <script src="js/menu.js"></script>
+    <script src="js/sideShow.js"></script>
+    <script src="js/menu1.js"></script>
+    <script>
+        function openMap(index) {
+            window.location.href = `hethongcuahang/bando.html?store=${index}`;
+        }
+    </script>
+    <script src="js/menu-scroll.js"></script>
+    <script src="js/menu-modal.js"></script>
+    
+   </body>
 </html>
